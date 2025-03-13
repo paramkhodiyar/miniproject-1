@@ -18,7 +18,8 @@ nav a {
     display: block;
     color: #000000;
     text-align: center;
-    padding: 14px 16px;
+    padding: 20px;
+    font-size: large;
     text-decoration: none;
 }
 
@@ -36,7 +37,7 @@ nav a:hover {
 
 .up h1 {
     margin: 0;
-    padding: 10px;
+    padding: 20px;
     color: rgb(0, 0, 0);
 }
 
@@ -83,4 +84,18 @@ nav a:hover {
 }
 img{
     border-radius: 8px;
+}
+.default{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+.default h1{
+    background-color: black;
+    color: white;
+    padding: 25px;
+    border-radius: 16px;
 }

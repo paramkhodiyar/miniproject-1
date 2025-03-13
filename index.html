@@ -10,14 +10,15 @@
 </head>
 
 <body>
+    
     <div class="up">
-        <h1>Sample</h1>
+        <h1>Mini Project</h1>
         <nav>
-            <a href="#">Home</a>
+            <!-- <a href="#">Home</a>
             <a href="#">About</a>
-            <a href="#">Portfolio</a>
+            <a href="#">Portfolio</a> -->
             <div class="dropdown">
-                <a href="#">Settings</a>
+                <a href="#">Mode</a>
                 <div class="dropdown-content">
                     <a class="mode" id="dark">Dark 🌙</a>
                     <a class="mode" id="light">Light ☀️</a>
@@ -25,35 +26,16 @@
             </div>
         </nav>
     </div>
+    <div class="default">
+        <h1>Change Mode from above.</h1>
+    </div>
     <div id="main">
         <img>
         <h1 id="content"></h1>
+        <h2 id="subcontent"></h2>
     </div>
 </body>
-<script>
-    let modes = document.querySelectorAll(".mode")
-    let body = document.querySelector("body")
-    let content = document.querySelector("#content")
-    let main = document.querySelector("#main")
-    let img = document.querySelector("img")
-modes.forEach((mode)=>{
-    if (mode.id === "dark"){
-        mode.addEventListener("click", ()=>{
-            body.style.backgroundColor = "black"
-            content.textContent = "😀"
-            img.src = "dark.jpg"
-            img.width = "200"
-            img.height = "200"
-            
+<script src = "script.js"></script>
+    
 
-            
-        })
-    }else{
-        mode.addEventListener("click", ()=>{
-            body.style.backgroundColor = "white"
-            content.textContent = "😫"
-        })
-    }
-})
-</script>
 </html>
